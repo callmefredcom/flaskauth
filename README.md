@@ -59,7 +59,7 @@ https://cloud.google.com/cloud-console
 + Navigate to "APIs & Services" > "Credentials".<br>
 + Click on "Create Credentials" and select "OAuth client ID".<br>
 + Set the application type to "Web application".<br>
-+ Add the authorized redirect URI, which will be http://localhost:5000/login/google/authorized if you're testing locally.<br>
++ Add the authorized redirect URI, which will be http://127.0.0.1:5000/login/google/authorized if you're testing locally.<br>
 
 **+ Note down the Client ID and Client Secret.**
 
