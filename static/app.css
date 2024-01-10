@@ -2,11 +2,6 @@ h4 {
    color: #323232;
 }
 
-#startRecord {
-   pointer-events: auto;
-   position: relative;
-   z-index: 10;
-}
 
 .app_logo {
    width: 200px !important;
@@ -24,8 +19,6 @@ h4 {
 #top_area {
   margin-top: 145px;
 }
-
-
 
 #FAQ p {
    color: grey;
@@ -184,55 +177,6 @@ button {
    width: 30px;
 }
 
-.recording-section {
-   margin: 20px 0;
-   text-align: center;
-}
-
-.visualizer-section {
-   margin-top: 10px;
-}
-
-#visualizer {
-   border: 1px solid #ddd;
-}
-
-.voice-recording-section {
-   text-align: center;
-   /* Center text and inline elements */
-   display: flex;
-   /* Use Flexbox */
-   flex-direction: column;
-   /* Stack children vertically */
-   align-items: center;
-   /* Center block-level children horizontally */
-   margin-bottom: 20px;
-   /* Add margin below the section */
-   padding: 20px;
-}
-
-.voice-recording-section button {
-   margin: 5px;
-   /* Add some space between the buttons */
-}
-
-#recordedAudio {
-   margin-top: 40px;
-   /* Add space above the audio player */
-   padding: 10px;
-   /* Add padding around the audio player */
-}
-
-.file-list li {
-   display: flex;
-   align-items: center;
-   justify-content: start;
-}
-
-.filename {
-   flex-grow: 1;
-}
-
 input[type="submit"] {
    background-color: #4CAF50;
    /* Green background */
@@ -258,73 +202,6 @@ input[type="submit"]:hover {
    /* Darker green on hover */
 }
 
-.custom-modal {
-   width: 70%;
-   /* Adjust as needed */
-   height: 100%;
-   /* Adjust as needed */
-   overflow-y: auto;
-   /* To ensure the content inside the modal is scrollable if it overflows */
-}
-
-.file-list li {
-   border-bottom: 1px solid lightgrey;
-   padding-bottom: 8px;
-   /* Optional: Add some spacing to make it look better */
-   margin-bottom: 8px;
-   /* Optional: Add some spacing to make it look better */
-}
-
-.file-list li:last-child {
-   border-bottom: none;
-   /* Remove the border from the last item */
-}
-
-/* Add this rule to your CSS */
-.file-list li.hidden {
-   display: none;
-}
-
-.blue-toast {
-   background-color: #AFEEEE !important;
-   color: black !important;
-}
-
-#editModal li {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-@media (max-width: 400px) {
-   #editModal .filename {
-      max-width: 100px !important;
-      /* Adjust accordingly based on the desired width */
-      max-height: 3em !important;
-      /* Assuming 1.1em line-height; adjust if different */
-      overflow: hidden !important;
-      /* Hide any overflow */
-      display: -webkit-box !important;
-      /* Modern browsers support -webkit- prefix, but consider other prefixes or no prefixes based on browser support */
-      -webkit-line-clamp: 2 !important;
-      /* Limit to 2 lines */
-      -webkit-box-orient: vertical !important;
-   }
-}
-
-span.badge {
-   min-width: 1rem;
-   padding: 10 20px;
-   margin-right: 20px;
-   text-align: center;
-   font-size: 1rem;
-   line-height: 22px;
-   height: 22px;
-   color: #757575;
-   overflow: hidden !important;
-   -webkit-box-sizing: border-box;
-   box-sizing: content-box;
-}
 
 .icon-btn {
    font-size: 30px !important;
@@ -347,38 +224,6 @@ span.badge {
    margin: 0px !important;
 }
 
-#jingle-tool-container {
-   margin-top: 50px;
-   margin-bottom: 50px;
-   margin-left: 10px;
-   margin-right: 10px;
-}
-
-.dropdown-content {
-   list-style: none !important;
-   width: 300px !important;
-   padding: 10px !important;
-   align-items: center !important;
-   justify-content: space-between !important;
-}
-
-.modal-item {
-   display: flex;
-   align-items: center;
-    justify-content: space-between;
-   margin-top: 10px;
-}
-
-
-.modal-item .sound-info {
-   font-size: 0.75em;
-    flex: 1;
-    margin-right: 10px;
-}
-
-.modal-item .btn-small {
-   font-size: 0.75em;
-}
 
 .button-group {
    display: flex;
@@ -403,84 +248,12 @@ span.badge {
    align-items: center;
 }
 
-#introDropdown,
-#backgroundDropdown,
-#outroDropdown,
-#voiceDropdown {
-   list-style-type: none;
-   padding-left: 0;
-}
-
-#selectVoiceoverButton {
-   background-color: lightblue !important;
-   color: black;
-}
-
-#voiceoverText {
-   font-size: 0.8em !important;
-   color: black !important;
-   padding:10px;
-}
-
-#voiceoverTitle {
-   font-size: 0.8em !important;
-   color: black !important;
-   padding:10px;
-}
-
 .btn-grey {
    background-color: darkgrey;
 }
 
 .btn-green {
    background-color: green !important;
-}
-
-#under {
-   max-width: 350px;
-   width: 70%;
-   margin: auto;
-   text-align: center;
-}
-
-#playButton {
-   border-radius: 5px;
-   border: none;
-   padding-left: 20px;
-   padding-right: 20px;
-   padding-top:10px;
-   padding-bottom:10px;
-   color: white;
-   font-family: Poppins;
-   margin-right: 20px;
-   background-color: #26a69a !important;
-}
-
-#downloadButton {
-   border-radius: 5px;
-   border: none;
-   padding: 10px;
-   color: white;
-   font-family: Poppins;
-   background-color: #26a69a !important;
-}
-
-#purchasecreditsButton {
-   margin-top: 25px;
-   border-radius: 5px;
-   border: none;
-   padding: 10px;
-   color: white;
-   font-family: Poppins;
-   background-color: #26a69a !important;
-}
-
-.modal-trigger {
-   width: 100% !important;
-}
-
-#brief_description b {
-   color: #5ECCFC;
 }
 
 .back-button {
@@ -496,149 +269,8 @@ h3 {
    color: #2196F3;
 }
 
-.edit-icon {
-   cursor: pointer;
-   margin-left: 10px;
-   font-size: 1em;
-}
-
-#prevPage {
-   border-radius: 5px;
-   border: solid 1px darkgrey;
-   padding: 10px;
-   color: black;
-   font-family: Poppins;
-   background-color: white !important;
-}
-
-#nextPage {
-   border-radius: 5px;
-   border: solid 1px darkgrey;
-   padding: 10px;
-   color: black;
-   font-family: Poppins;
-   background-color: white !important;
-}
-
-#currentPage {
-   margin-left: 10px;
-   margin-right: 10px;
-}
-
 .account_btn {
    font-size: 0.75em !important;
-}
-
-.file-name-cell-class {
-   font-size: 0.75em !important;
-}
-
-.pretty-name-cell-class {
-   font-size: 0.75em !important;
-}
-
-.file-type-cell-class {
-   font-size: 0.75em !important;
-}
-
-.catalogue_modal_title {
-   font-size: 15px !important;
-   font-weight: 600 !important;
-   margin-bottom: 20px !important;
-   color: #2196F3 !important;
-}
-
-#generatedVoiceoversTitle {
-   font-size: 15px !important;
-   font-weight: 600 !important;
-   margin-bottom: 20px !important;
-   color: #2196F3 !important;
-}
-
-.unselected-pack {
-   background-color: white;
-   color: black;
-   border: 2px solid black;
-}
-
-.selected-pack {
-   background-color: green !important;
-   color: white;
-   border: 2px solid green !important;
-}
-
-.credit-pack {
-   height: auto !important;
-   /* This ensures the button adjusts its height based on content */
-}
-
-.credit-pack {
-   font-size: 1em;
-   border: solid 1px darkgrey;
-   margin: 10px;
-   white-space: normal;
-   /* This will allow the text to wrap */
-}
-
-@media (max-width: 480px) {
-   .credit-pack {
-      font-size: 0.8em;
-   }
-}
-
-#stripeModal {
-   padding: 15px;
-}
-
-@media (max-width: 768px) {
-   #stripeModal {
-      padding: 10px;
-      width: 100%;
-   }
-}
-
-@media (max-width: 768px) {
-   #voiceoverModal {
-      padding: 10px;
-      width: 100%;
-   }
-}
-
-
-@media (max-width: 768px) {
-   #voiceRecorderModal {
-      padding: 10px;
-      width: 100%;
-   }
-}
-
-
-@media (max-width: 768px) {
-   #voiceoverModal #outroModal #introModal #backgroundModal {
-      padding: 10px;
-      width: 100%;
-   }
-}
-
-@media (max-width: 768px) {
-   #outroModal {
-      padding: 10px;
-      width: 100%;
-   }
-}
-
-@media (max-width: 768px) {
-   #introModal {
-      padding: 10px;
-      width: 100%;
-   }
-}
-
-@media (max-width: 768px) {
-   #backgroundModal {
-      padding: 10px;
-      width: 100%;
-   }
 }
 
 .mdl-button--large {
@@ -896,90 +528,6 @@ button {
    opacity: 0.8;
 }
 
-.tag-label {
-   display: inline-block;       /* Make the div inline */
-   padding: 5px;               /* Padding around the tag name */
-   margin-right: 5px;                 /* Space between labels */
-   border-radius: 5px;         /* Rounded corners */
-   color: #fff;
-   font-size: 10px;             /* Font size of the tag text */
-   transition: background-color 0.3s ease; /* Smooth transition for hover effects */
-   overflow: hidden; /* Keeps content from spilling out */
-   text-overflow: ellipsis; /* If the tag name is too long, it ends with ... */
-   max-width: 75px;
-}
-
-.filter-tag-label:hover {
-   opacity: 0.6 !important;
-}
-
-.filter-tag-label {
-   display: inline-block;       /* Make the div inline */
-   padding: 8px;               /* Padding around the tag name */
-   margin-right: 10px;                 /* Space between labels */
-   border-radius: 5px;         /* Rounded corners */
-   color: #fff;
-   font-size: 12px;             /* Font size of the tag text */
-   transition: background-color 0.3s ease; /* Smooth transition for hover effects */
-   overflow: hidden; /* Keeps content from spilling out */
-   text-overflow: ellipsis; /* If the tag name is too long, it ends with ... */
-   max-width: 100px;
-}
-
-.tags-container {
-    text-align: left;
-    display: block;
-    flex-wrap: wrap;
-    flex: 1;
-    margin-right: 10px;
-}
-
-.sound-info {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px; /* Or whatever max width you want */
-}
-
-.modal-tags-title
-{font-size:12px;
-font-weight:bold;
-margin-bottom:5px;}
-
-.reset-tags-button
-{font-size:12px;
-border: solid 1px darkgrey;
-margin-top:10px;
-background-color: white;
-color: black;
-border-radius: 5px;
-padding: 8px;}
-
-.reset-tags-button:hover
-{background-color: #26a69a;
-color: white;}
-
-/* highlight popular pack */
-
-.highlighted-pack {
-  position: relative;
-  border: 3px solid #FFD700; /* Gold color */
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: #FFD700; /* Gold color */
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
 #promocall
 {
 margin:0;
@@ -1019,12 +567,10 @@ background-color: darkblue;
 padding:20px;
 }
 
-
 #specials a
 {
 color:yellow !important;
 }
-
 
 #card-element
 {border: solid black 1px;
@@ -1058,105 +604,6 @@ max-width: 500px;
 
 #chorus_intro
 {font-size:0.8em;}
-
-#choruspicker
-{text-align:center;
-width:150px;}
-
-.select-dropdown {
-  max-width: 100px;
-}
-
-#chorusSelect
-{width:150px !important;}
-
-.progress
-{
-height:20px;
-}
-
-/* Style the lightbox image */
-.lightbox-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-.lightbox-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.lightbox-close:hover,
-.lightbox-close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#promomakerintro
-{text-align:justify;}
-
-#promomakerdemo
-{
-display:flex;
-align-items: center;
-flex-wrap: wrap;
-
-}
-
-#promomakersound
-{margin: 0 auto;}
-
-#promomakerimage
-{
-margin-top:20px;
-margin-left: auto;
-margin-right: auto;
-}
-
-#account_header
-{text-align: center;}
-
-#account_intro
-{text-align: justify;}
-
-.container {
-margin-top:125px !important;
-}
-
-#payment-invite
-{margin-top:20px;
-}
-
-#voiceRecorder
-{margin-bottom:30px;
-}
-
-#voiceoptions
-{margin-bottom:20px;
-font-size:1.25em;
-}
 
 .google-btn {
   width: 184px;
