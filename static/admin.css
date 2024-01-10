@@ -1,0 +1,359 @@
+/* Custom styles for admin panel */
+body
+{font-family: Poppins;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#footer
+{
+padding:10px;
+text-align:center;}
+
+.logo {
+    max-width: 100px !important;  /* Adjust this value to your desired width */
+}
+
+h1
+{font-size:1.75em;}
+
+h2
+{font-size:1.5em;}
+
+h3
+{font-size:1.25em;
+background-color: lightblue;
+padding:10px;
+width:350px;}
+
+
+
+.dropdown-content {
+  width: 600px !important;
+  padding:20px !important;
+}
+
+.voice-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#prevPage
+{
+border-radius:5px;
+border: solid 1px darkgrey;
+padding:10px;
+color: black;
+font-family: Poppins;
+background-color: white !important;
+}
+
+#nextPage
+{
+border-radius:5px;
+border: solid 1px darkgrey;
+padding:10px;
+color: black;
+font-family: Poppins;
+background-color: white !important;
+}
+
+#currentPage
+{margin-left:10px;
+margin-right:10px;}
+
+.app-button
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#bottom_spacer
+{
+    margin-bottom: 150px !important;
+}
+
+.tag-label {
+   display: inline-block;       /* Make the div inline */
+   padding: 10px;               /* Padding around the tag name */
+   margin: 5px;                 /* Space between labels */
+   border-radius: 10px;         /* Rounded corners */
+   color: #fff;
+   font-size: 14px;             /* Font size of the tag text */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.tag-label:hover {
+   background-color:  #666;      /* Change color on hover to give an interactive feel */
+}
+
+.tag-label .remove-tag,
+.tag-label .add-tag {
+   display: inline-block;       /* Make it inline with the tag name */
+   width: 20px;                 /* Width of the x or + circle */
+   height: 20px;                /* Height of the x or + circle */
+   line-height: 20px;           /* Centers the x or + vertically */
+   text-align: center;          /* Centers the x or + horizontally */
+   background-color: #fff;     /* Background color of the x or + circle */
+   color: #000;                 /* Color of the x or + */
+   border-radius: 50%;          /* Makes it a circle */
+   margin-left: 10px;           /* Space between the tag name and the x or + */
+   cursor: pointer;             /* Makes it clear that it's clickable */
+}
+
+.tag-label .remove-tag:hover,
+.tag-label .add-tag:hover {
+   background-color: #ddd;     /* Change color on hover */
+}
+
+#tagsModal h4 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+#tagsModal h5 {
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.category-label {
+   display: inline-block;       /* Make the div inline */
+   padding: 10px;               /* Padding around the tag name */
+   margin: 5px;                 /* Space between labels */
+   border-radius: 10px;         /* Rounded corners */
+   color: #fff;
+   font-size: 14px;             /* Font size of the tag text */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.category-label:hover {
+   background-color:  #666;      /* Change color on hover to give an interactive feel */
+}
+
+.category-label .remove-category,
+.category-label .add-category {
+   display: inline-block;       /* Make it inline with the tag name */
+   width: 20px;                 /* Width of the x or + circle */
+   height: 20px;                /* Height of the x or + circle */
+   line-height: 20px;           /* Centers the x or + vertically */
+   text-align: center;          /* Centers the x or + horizontally */
+   background-color: #fff;     /* Background color of the x or + circle */
+   color: #000;                 /* Color of the x or + */
+   border-radius: 50%;          /* Makes it a circle */
+   margin-left: 10px;           /* Space between the tag name and the x or + */
+   cursor: pointer;             /* Makes it clear that it's clickable */
+}
+
+.category-label .remove-category:hover,
+.category-label .add-category:hover {
+   background-color: #ddd;     /* Change color on hover */
+}
+
+
+#categoriesModal h4 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+#categoriesModal h5 {
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+#searchUsersBtn {
+    margin: 10px 0;
+}
+
+#searchUsersInput {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#saveCreditsBtn {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: none;
+}
+
+.user-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filename {
+    text-align: left;
+}
+
+.user-play-button {
+    color: #fff;
+    background-color: #26a69a;
+    font-size: 1em;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   display: flex;
+   gap: 10px;
+}
+
+.open-app-button {
+   font-size: 0.75em !important;
+}
+
+.bulk-button {
+   font-size: 0.75em !important;
+}
+
+/* Styles for the voiceover list item */
+.voiceover-item {
+    display: flex;            /* Enable Flexbox */
+    justify-content: space-between; /* Space content at either end of the item */
+    align-items: center;      /* Align items vertically in the middle */
+    padding: 0.5rem 1rem;     /* Add some padding */
+    border-bottom: 1px solid #ddd; /* Optional: add a divider between items */
+}
+
+/* Styles for the play button */
+.play-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;              /* Remove border */
+    color: white;              /* White text color */
+    padding: 10px 20px;        /* Some padding */
+    cursor: pointer;           /* Cursor pointer on hover */
+    border-radius: 5px;        /* Optional: Rounded corners */
+}
+
+/* Additional styles on button hover */
+.play-button:hover {
+    background-color: #45a049; /* Darken background color */
+}
+
+#voiceovers_amount{
+width:50px;
+}
+
+#show_theme{
+width:200px;
+}
+
+#categoryDropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#categoryDropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.progress {
+height: 20px;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 16px;
+    height: 16px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#bulk_generate
+{
+    padding-top:0;
+    padding-bottom:10px;
+    font-size:14px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+
+h3 {
+    color: black !important;
+}
+
+.vo-select
+{
+   border:none;
+   padding: 10px 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.generate-button
+{
+   border:none;
+   background-color: lightgreen !important;
+   padding: 10px 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.voiceover-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content, .button-group {
+    display: flex;
+    align-items: center;
+}
+
+.button-group button {
+    margin-left: 10px;  /* Adjust as per your need */
+}
+
+.text-content {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.button-group {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+#packDropdown a {
+    display: block;
+}
+
+#fileList .btn {
+font-size:12px !important;
+margin:5px;}

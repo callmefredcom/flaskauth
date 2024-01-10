@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+     <h4 class="ops_title">The Best App | Resend Verification Email</h4>
+    <div class="formblock">
+        <form action="/resend-verification" method="post">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Resend Verification Email">
+        </form>
+    </div>
+{% endblock %}

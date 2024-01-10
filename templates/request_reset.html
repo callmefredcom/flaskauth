@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+       <div id ="top_area">
+    <h4 class="ops_title">The Best App | Request Password Reset</h4>
+       </div>
+    <br>
+    <form method="post">
+        <div class="input-field">
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn green">Request Password Reset</button>
+    </form>
+</div>
+
+<a href="/login" class="back-button btn waves-effect waves-light blue">BACK</a>
+
+{% endblock %}

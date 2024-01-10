@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    <link rel="icon" href="/static/images/applogo.png" type="image/png">
+
+    <title>The Best App In The World</title>
+
+    <meta name="description" content="This is the description of the best app in the world">
+    <meta property="og:image" content="{{ url_for('static', filename='images/featured.png', _external=True) }}">
+    <meta name="google" content="notranslate">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+
+    {% block head %}{% endblock %}
+</head>
+
+
+
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% block scripts %}{% endblock %}
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    M.toast({html: '{{ message }}', classes: '{{ category }}'});
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    });
+</script>
+
+
+</body>
+</html>

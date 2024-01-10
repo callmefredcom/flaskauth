@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="header">
+<center><img src="{{ url_for('static', filename='images/applogo.png') }}" alt="App Logo" class="app_logo"></center>
+<div id="brief_description">
+    <p class="center-align intro_text">This is where you'll create the actual app</p>
+    <p class="center-align intro_text">Good Luck!</p>
+</div>
+</div>
+
+<script src="{{ url_for('static', filename='app.obs.js') }}"></script>
+
+<div class="button-container">
+<a href="/admin" class="account-button btn waves-effect waves-light blue">Admin</a>
+<a href="/logout" class="logout-button btn waves-effect waves-light blue">Logout</a>
+</div>
+
+<div id="footer">
+    <h4 id="specials"><a href="https://aijinglemaker.com">👉 Creates jingles in a snap!</a></h4>
+    <br>
+<p>If you experience a bug or want to share some feedback, please <a href="mailto:contact@callmefred.com?subject=thebestapp">email Frédérick, the developer.<a></p>
+</div>
+<div class="index_footer">
+    <span>© 2024 Your Company|</span> <a href="https://yourcompany.com/privacy-policy/">Privacy Policy</a> | <a href="https://yourcompany.com/terms-of-service/">Terms of Service</a> | <a href="https://www.yourcompany.com/blog">Blog</a>
+</div>
+
+
+{% endblock %}

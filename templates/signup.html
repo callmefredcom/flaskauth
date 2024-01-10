@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <br><br>
+    <h4 class="ops_title">The Best App | Signup</h4>
+    <br><br>
+    <p class="ops_text">👉 Create your account to get started.</p>
+    <br><br>
+<div class="formblock">
+    <form id="signup-form" action="/signup" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Signup">
+    </form>
+</div>
+<br><br>
+
+<!-- In login.html and signup.html -->
+<a href="{{ url_for('google.login') }}" class="google-btn">
+    <div class="google-icon-wrapper">
+             <img class="google-icon" src="{{ url_for('static', filename='images/Glogo.svg') }}"/>
+    </div>
+    <p class="btn-text"><b>Sign up with Google</b></p>
+</a>
+
+<br><br>
+
+
+<a href="/login" class="login_link">Already registered? Log in.</a><br><br>
+
+<a href="/" class="back-button btn waves-effect waves-light blue">BACK</a>
+
+{% endblock %}
