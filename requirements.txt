@@ -1,0 +1,8 @@
+Flask==3.0.0
+flask_dance==7.0.1
+Flask_Login==0.6.3
+itsdangerous==2.1.2
+mysql_connector_repackaged==0.3.1
+python-dotenv==1.0.0
+Requests==2.31.0
+Werkzeug==3.0.1
