@@ -1,5 +1,7 @@
 # Authentication Boilerplate for Flask
 
+### 👉 Detailed tutorial: https://youtu.be/FydJC3aP7mM
+
 ## Presentation
 
 This authentication boilerplate enables you to set up all the authentication logic for username, email, password, as well as Google One  Tap Signup/Login.
