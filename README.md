@@ -55,13 +55,13 @@ url = "https://api.sendinblue.com/v3/smtp/email"
 Go to the Google Cloud Console.<br>
 https://cloud.google.com/cloud-console
 
-Create a new project.<br>
-Navigate to "APIs & Services" > "Credentials".<br>
-Click on "Create Credentials" and select "OAuth client ID".<br>
-Set the application type to "Web application".<br>
-Add the authorized redirect URI, which will be http://localhost:5000/login/google/authorized if you're testing locally.<br>
++ Create a new project.<br>
++ Navigate to "APIs & Services" > "Credentials".<br>
++ Click on "Create Credentials" and select "OAuth client ID".<br>
++ Set the application type to "Web application".<br>
++ Add the authorized redirect URI, which will be http://localhost:5000/login/google/authorized if you're testing locally.<br>
 
-Note down the Client ID and Client Secret.
+**+ Note down the Client ID and Client Secret.**
 
 ## Generate key.pem and cert.pem
 Required to test the app with local SSL support.<br>
