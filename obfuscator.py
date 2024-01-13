@@ -5,7 +5,7 @@ import subprocess
 js_directory = 'static'
 
 # Target file to obfuscate
-target_file = 'index.js'
+target_file = 'app.js'
 
 # Check if the target file exists in the directory
 if target_file in os.listdir(js_directory):

@@ -32,13 +32,13 @@ login_manager.init_app(app)
 db_password = os.environ.get('MYSQL_PASSWORD')
 
 # MySQL configuration
-DATABASE_URL = f"mysql -roundhouse.proxy.rlwy.net -uroot -p{db_password} --port 35429 --protocol=TCP railway"
+DATABASE_URL = f"mysql -roundhouse.proxy.rlwy.net -uroot -p{db_password} --port 35112 --protocol=TCP railway"
 
 DATABASE_CONFIG = {
             'user': 'root',
             'password': os.environ.get('MYSQL_PASSWORD'),
             'host': 'roundhouse.proxy.rlwy.net',
-            'port': '35429',
+            'port': '35112',
             'database': 'railway'
         }
 
