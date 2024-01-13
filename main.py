@@ -61,32 +61,6 @@ def unauthorized():
     flash("You must be logged in to access this page.", "warning")
     return redirect(url_for('login', next=request.url))
 
-def require_permission(feature_id):
-    def decorator(f):
-        @wraps(f)
-        def decorated_function(*args, **kwargs):
-            conn = get_db()
-            cursor = conn.cursor()
-
-            cursor.execute(
-                'SELECT rf.feature_id FROM role_features rf '
-                'JOIN users u ON u.role_id = rf.role_id '
-                'WHERE u.id = %s AND rf.feature_id = %s',
-                (current_user.id, feature_id)
-            )
-
-            result = cursor.fetchone()
-
-            if not result:
-                flash('You do not have permission to access this page.')
-                return redirect(url_for('index'))
-            return f(*args, **kwargs)
-
-        return decorated_function
-
-    return decorator
-
-
 @login_manager.user_loader
 def load_user(user_id):
     conn = get_db()
@@ -203,15 +177,6 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/admin', methods=['GET'])
-@login_required
-@require_permission(2)
-def admin_dashboard():
-    if current_user.role_id != 1:
-        flash('Unauthorized access')
-        return redirect('/')
-    return render_template('admin.html')
-
 def generate_reset_token(email):
     serializer = URLSafeTimedSerializer(app.config['SECRET_KEY'])
     return serializer.dumps(email, salt=app.config['SECURITY_PASSWORD_SALT'])
@@ -324,18 +289,6 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
-@app.route('/static/admin.js')
-@login_required
-@require_permission(2)
-def custom_static_admin_js():
-    return send_from_directory(app.static_folder, "admin.js")
-
-@app.route('/static/admin.css')
-@login_required
-@require_permission(2)
-def custom_static_admin_css():
-    return send_from_directory(app.static_folder, "admin.css")
-
 
 @app.route('/reset/<token>', methods=['GET', 'POST'])
 def reset_with_token(token):
@@ -406,8 +359,6 @@ def google_login():
         return redirect(url_for('app_page'))  # Redirect to the application's main page
     else:
         return "Failed to fetch user info from Google.", 403
-
-
 
 @app.route('/logout/google')
 def google_logout():
